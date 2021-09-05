@@ -34,6 +34,7 @@ const AddCandidate = () => {
       }}
     >
       <input
+        placeholder = "enter name of candidate..."
         type="text"
         className="newCandidateName"
         value={newName}
