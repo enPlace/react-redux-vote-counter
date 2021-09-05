@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import TotalVotes from './features/totalCount/TotalVotes';
-import Ballot from './features/voteTally/Ballot';
+import TotalVotes from './components/TotalVotes';
+import Ballot from './components/Ballot';
 
 function App() {
   return (

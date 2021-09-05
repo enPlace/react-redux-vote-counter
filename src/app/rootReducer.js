@@ -1,8 +1,10 @@
 import { combineReducers } from "redux"
-import counterReducer from "../features/totalCount/counterSlice"
-import voteReducer from "../features/voteTally/voteSlice"
+import counterReducer from "./counterSlice"
+import voteReducer from "./voteSlice"
 
-export default combineReducers({
+const rootReducer =  combineReducers({
   counter: counterReducer,
   votes: voteReducer 
 })
+
+export default  rootReducer

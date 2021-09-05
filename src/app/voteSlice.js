@@ -16,6 +16,17 @@ const voteSlice = createSlice({
     voteRedacted: (state, action) => {
       if (state[action.payload.id].count > 0) state[action.payload.id].count--;
     },
+    resetAllCandidates: (state) => {
+      state.allIds.map((id) => (state[id].count = 0));
+    },
+    addCandidate: (state, action) => {
+      state[action.payload.name] = {
+        name: action.payload.name,
+        count: 0,
+        id: action.payload.name,
+      };
+      state.allIds.push(action.payload.name);
+    },
   },
 });
 
@@ -23,5 +34,6 @@ export const selectVotes = (state) => {
   return state.votes.allIds.map((id) => state.votes[id]);
 };
 
-export const { voted, voteRedacted } = voteSlice.actions;
+export const { voted, voteRedacted, resetAllCandidates, addCandidate} =
+  voteSlice.actions;
 export default voteSlice.reducer;

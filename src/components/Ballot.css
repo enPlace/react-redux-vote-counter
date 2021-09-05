@@ -1,0 +1,31 @@
+.Ballot {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+
+}
+.candidateInfo{
+    display: flex;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.candidate {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 140px;
+
+}
+.primaryInfo{
+    display: flex;
+}
+.candidateName{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.tallyInfo{
+    display: flex;
+}
