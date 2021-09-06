@@ -8,18 +8,18 @@ import {
   voteRedacted,
   selectVotes,
   resetAllCandidates,
+  candidateRemoved,
 } from "../app/voteSlice";
 import {
   increment,
   decrement,
   reset,
-  selectCounter,
+  decrementByAmount,
 } from "../app/counterSlice";
 
 const Ballot = () => {
   const dispatch = useDispatch();
   const votes = useSelector(selectVotes);
-  const totalVotes = useSelector(selectCounter);
 
   return (
     <div className="Ballot">
@@ -69,19 +69,30 @@ const Ballot = () => {
             >
               <BarPercent tally={vote.count}></BarPercent>
             </div>
+            <button
+              className="deleteButton"
+              onClick={() => {
+                dispatch(decrementByAmount({ count: vote.count }));
+                dispatch(candidateRemoved({ id: vote.id }));
+              }}
+            >
+              X
+            </button>
           </div>
         );
       })}
-      <AddCandidate></AddCandidate>
-      <button
-        className="resetAll"
-        onClick={() => {
-          dispatch(reset());
-          dispatch(resetAllCandidates());
-        }}
-      >
-        Reset All
-      </button>
+      <div className="bottomButtons">
+        <AddCandidate></AddCandidate>
+        <button
+          className="resetAll"
+          onClick={() => {
+            dispatch(reset());
+            dispatch(resetAllCandidates());
+          }}
+        >
+          Reset All
+        </button>
+      </div>
     </div>
   );
 };

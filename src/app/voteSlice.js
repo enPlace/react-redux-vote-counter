@@ -27,6 +27,14 @@ const voteSlice = createSlice({
       };
       state.allIds.push(action.payload.name);
     },
+    candidateRemoved: (state, action) => {
+      const newState = {
+        ...state,
+        allIds: state.allIds.filter((id) => id !== action.payload.id),
+      };
+      delete newState[action.payload.id];
+      return newState;
+    },
   },
 });
 
@@ -34,6 +42,11 @@ export const selectVotes = (state) => {
   return state.votes.allIds.map((id) => state.votes[id]);
 };
 
-export const { voted, voteRedacted, resetAllCandidates, addCandidate} =
-  voteSlice.actions;
+export const {
+  voted,
+  voteRedacted,
+  resetAllCandidates,
+  addCandidate,
+  candidateRemoved,
+} = voteSlice.actions;
 export default voteSlice.reducer;

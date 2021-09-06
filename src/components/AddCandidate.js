@@ -42,6 +42,7 @@ const AddCandidate = () => {
           handleChange(e);
         }}
       />
+      <button type = "button" onClick = {()=>setShowForm(false)} >Cancel</button>
       <button type="submit">Add Candidate</button>
     </form>
   );
