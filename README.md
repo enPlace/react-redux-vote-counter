@@ -18,6 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Store Design: 
 The store has two slices: the counter, which keeps track of the total votes, and candidates, which maintains each 
 candidate object as well as an array of all candidate Ids, following the normalized state redux design pattern. 
+```javascript
 InitialState: {
     counter: {value: 0}
     candidates: {
@@ -28,7 +29,7 @@ InitialState: {
     allIds: ["a", "b", "c", "d"],
   },
 }
-
+```
 
 ## Features and Previews
 - <h3>Track individual candidate and overall vote count, and illustrate percentage of vote total with a bar.</h3>
