@@ -10,7 +10,7 @@ const BarPercent = ({ tally }) => {
       style={{
         width: barPercent,
         height: "100%",
-        "background-color": "yellow",
+        backgroundColor: "yellow",
       }}
     ></div>
   );

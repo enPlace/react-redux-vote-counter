@@ -1,4 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+#Vote Tally App with React and Redux 
+
+
+<a href="https://enplace.github.io/react-inline-editable-cv/" target="_blank"> https://enplace.github.io/react-inline-editable-cv/ </a>
+
+I made this CV generator to practice using states, and to practice conditional rendering depending on variables
+with which the user can interact. 
+
+
+
+<h3 align="left">Languages and Tools:</h3>
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/)
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
+  <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="60" height="60"/> </a> <a href="https://webpack.js.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="60" height="60"/> </a><a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>  <a href="https://redux.js.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a></p>
+
+
+## Features and Previews
+- <h3>Track individual candidate and overall vote count, and illustrate percentage of vote total with a bar.</h3>
+
+ <img src="./tally.gif" alt="todo-component"/>
+- <h3>Add a new candidate</h3>
+ <img src="./add.gif" alt="todo-component"/>
+- <h3>Remove candidates</h3>
+ <img src="./remove.gif" alt="todo-component"/>
+- <h3>Reset vote counts</h3>
+ <img src="./reset.gif" alt="todo-component"/>
+
+
 
 ## Available Scripts
 
