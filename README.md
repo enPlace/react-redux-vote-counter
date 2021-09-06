@@ -1,4 +1,4 @@
-#Vote Tally App with React and Redux 
+# Vote Tally App with React and Redux 
 
 
 <a href="https://enplace.github.io/react-inline-editable-cv/" target="_blank"> https://enplace.github.io/react-inline-editable-cv/ </a>
