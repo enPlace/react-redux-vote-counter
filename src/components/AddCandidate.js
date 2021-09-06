@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addCandidate } from "../app/voteSlice";
+import { addCandidate } from "../app/candidateSlice";
 
 const AddCandidate = () => {
   const dispatch = useDispatch();

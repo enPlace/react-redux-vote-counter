@@ -1,10 +1,10 @@
 import { combineReducers } from "redux"
 import counterReducer from "./counterSlice"
-import voteReducer from "./voteSlice"
+import candidateReducer from "./candidateSlice"
 
 const rootReducer =  combineReducers({
   counter: counterReducer,
-  votes: voteReducer 
+  candidates: candidateReducer 
 })
 
 export default  rootReducer

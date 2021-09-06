@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const voteSlice = createSlice({
-  name: "votes",
+const candidateSlice = createSlice({
+  name: "candidates",
   initialState: {
     a: { name: "Candidate A", count: 0, id: "a" },
     b: { name: "Candidate B", count: 0, id: "b" },
@@ -38,8 +38,8 @@ const voteSlice = createSlice({
   },
 });
 
-export const selectVotes = (state) => {
-  return state.votes.allIds.map((id) => state.votes[id]);
+export const selectCandidates = (state) => {
+  return state.candidates.allIds.map((id) => state.candidates[id]);
 };
 
 export const {
@@ -48,5 +48,5 @@ export const {
   resetAllCandidates,
   addCandidate,
   candidateRemoved,
-} = voteSlice.actions;
-export default voteSlice.reducer;
+} = candidateSlice.actions;
+export default candidateSlice.reducer;

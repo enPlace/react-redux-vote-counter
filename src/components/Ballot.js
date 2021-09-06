@@ -6,10 +6,10 @@ import PercentOfVotes from "./percentages/PercentOfVotes";
 import {
   voted,
   voteRedacted,
-  selectVotes,
+  selectCandidates,
   resetAllCandidates,
   candidateRemoved,
-} from "../app/voteSlice";
+} from "../app/candidateSlice";
 import {
   increment,
   decrement,
@@ -19,7 +19,7 @@ import {
 
 const Ballot = () => {
   const dispatch = useDispatch();
-  const votes = useSelector(selectVotes);
+  const votes = useSelector(selectCandidates);
 
   return (
     <div className="Ballot">
